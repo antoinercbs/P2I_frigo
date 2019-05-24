@@ -10,6 +10,7 @@ public class Capteurs {
     public static void main(String[] args) {
         System.out.println("ceci est une update");
         //coucou
+        System.out.println("retest");
          F = new Fenetre();
     }
     

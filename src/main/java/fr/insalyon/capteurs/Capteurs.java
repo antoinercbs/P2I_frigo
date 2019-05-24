@@ -8,6 +8,8 @@ package fr.insalyon.capteurs;
 public class Capteurs {
     public static Fenetre F;
     public static void main(String[] args) {
+        System.out.println("ceci est une update");
+        //coucou
          F = new Fenetre();
     }
     

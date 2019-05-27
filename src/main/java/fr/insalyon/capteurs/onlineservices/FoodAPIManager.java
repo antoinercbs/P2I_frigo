@@ -18,7 +18,6 @@ import javax.swing.JOptionPane;
 import org.json.JSONObject;
 
 /**
- *
  * @author Antoine Rochebois
  */
 public class FoodAPIManager {
@@ -26,11 +25,11 @@ public class FoodAPIManager {
     private OkHttpClient client;
     JSONObject currentItem;
 
-    void FoodAPIManager() {
+    public FoodAPIManager() {
         client = new OkHttpClient();
     }
 
-    void fetchDataFromGtin(String gtin) {
+    public void fetchDataFromGtin(String gtin) {
         Request request = new Request.Builder()
                 .url("https://fr.openfoodfacts.org/api/v0/produit/" + gtin + ".json")
                 .get()
@@ -46,19 +45,39 @@ public class FoodAPIManager {
 
     }
 
-    String getProductName() {
+    public String getProductName() {
         if (this.currentItem != null) {
             return this.currentItem.getJSONObject("product").getString("product_name");
-        } else {
-            return null;
-        }
+        } 
+        return null;
     }
 
-    URL getProductImageURL() throws MalformedURLException {
+    public String getProductImageURL() {
         if (this.currentItem != null) {
-            return new URL (this.currentItem.getJSONObject("product").getString("image_front_url"));
-        } else {
-            return null;
-        }
+            return this.currentItem.getJSONObject("product").getString("image_front_url");
+        } 
+        return null;
+    }
+    
+    public String getProductCategorie() {
+        if (this.currentItem != null) {
+            return this.currentItem.getJSONObject("product").getString("categories");
+        } 
+        return null;
+    }
+    
+    public double getContenance() {
+        if (this.currentItem != null) {
+            return this.currentItem.getJSONObject("product").getDouble("product_quantity");
+        } 
+        return -1;
+    }
+
+    public int getProductDuration() {
+        return (int) (Math.random()*7+7);
+    }
+    
+    public String getContenanceUnit() {
+        return "g";
     }
 }

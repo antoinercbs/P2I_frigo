@@ -49,33 +49,18 @@ public class TestArduino
                     for(int j=0 ; j<data.length; j++){
                             dataFinal.add(data[j].split(";"));
                     }
-     
-               /* for(String[] tab: dataFinal){   ( une autre méthode pas utilisée)
-                for(int j=0;j<tab.length;j++){
-                    if(j%6==0)
-                        maBD.ajouterMesure(1,2,Double.parseDouble(tab[j]));
-                    if(j%6==1)
-                        maBD.ajouterMesure(1,3,Double.parseDouble(tab[j]));
-                    if(j%6==2)
-                        maBD.ajouterMesure(1,4,Double.parseDouble(tab[j]));
-                    if(j%6==3){
-                        maBD.ajouterMesure(1,1,Double.parseDouble(tab[j]));
-                        maBD.ajouterProduit(1,Integer.parseInt(tab[j]));
-                    }
-                }     
-             }
-*/
+    
                 for(String[] tab: dataFinal){
-                    a=Integer.parseInt(tab[0]);
-                        if(a!=0){
-                            int i=
-                            maBD.ajouterMesure(2,a, Double.parseDouble(tab[1]));
+                    if (tab.length > 1) {
+                        a=Integer.parseInt(tab[0]);
+                        if(a==1) // permet l'insertion dans la table Produit
+                            maBD.ajouterProduit(2,Long.parseLong(tab[1]));
+                    }
+                    if(a!=0){
+                            int i= maBD.ajouterMesure(2,a, Double.parseDouble(tab[1]));
                             console.log("ajoutMesure: "+i);
                         }
-                   /*   if(a==1) // permet l'insertion dans la table Produit
-                       maBD.ajouterProduit(1,Integer.parseInt(tab[1]));
-                       */
-                       
+
                 }
 
                 String s="-- " ;

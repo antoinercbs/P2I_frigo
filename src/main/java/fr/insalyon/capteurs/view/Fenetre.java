@@ -5,8 +5,8 @@
  */
 package fr.insalyon.capteurs.view;
 
-import fr.insalyon.capteurs.BDFlux;
-import fr.insalyon.capteurs.BDFlux;
+
+import fr.insalyon.p2i2.javaarduino.BDFlux;
 import java.awt.*;
 import javax.swing.*;
 

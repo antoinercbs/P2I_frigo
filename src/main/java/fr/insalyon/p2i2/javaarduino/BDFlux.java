@@ -28,12 +28,6 @@ public class BDFlux {
     private PreparedStatement insertMesureStatement;
     private PreparedStatement insertProduitStatement;
 
-    public static void main(String[] args) {
-
-        BDFlux bdFlux = new BDFlux("<base-de-donnees>", "<login>", "<mot-de-passe>");
-
-    }
-
     public BDFlux(String bd, String compte, String motDePasse) {
         try {
 

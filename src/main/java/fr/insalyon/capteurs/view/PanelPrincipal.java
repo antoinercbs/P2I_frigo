@@ -5,7 +5,7 @@
  */
 package fr.insalyon.capteurs.view;
 
-import fr.insalyon.capteurs.BDFlux;
+import fr.insalyon.p2i2.javaarduino.BDFlux;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -23,7 +23,7 @@ public class PanelPrincipal extends StandardPanel {
     private JButton BoutonMonFrigo;
     public PanelPrincipal(BDFlux bd) {
 
-        LabelHaut = new JLabel("                                      Température : " + bd.Temp + " °C                          Humidité : " + bd.Humi + " %");
+        LabelHaut = new JLabel("                                      Température : " + " °C                          Humidité : "  + " %");
         LabelHaut.setBounds(0, 0, 1000, 100);
         LabelHaut.setFont(StandardPanel.POLICE);
         LabelHaut.setBackground(StandardPanel.COULEUR);

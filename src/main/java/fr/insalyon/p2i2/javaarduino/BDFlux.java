@@ -50,7 +50,7 @@ public class BDFlux {
     }
 
     
-    public int ajouterProduit(int idRefrigerateur,int codeBarre) { // méthode pas encore utilisée
+    public int ajouterProduit(int idRefrigerateur,int codeBarre) { 
         try {
             Date dateTime=new Date();
             this.insertProduitStatement.setInt(2, idRefrigerateur);

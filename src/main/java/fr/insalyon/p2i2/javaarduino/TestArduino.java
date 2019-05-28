@@ -55,11 +55,12 @@ public class TestArduino
                         a=Integer.parseInt(tab[0]);
                         if(a==1) // permet l'insertion dans la table Produit
                             maBD.ajouterProduit(2,Long.parseLong(tab[1]));
-                    }
-                    if(a!=0){
+                        if(a!=0){
                             int i= maBD.ajouterMesure(2,a, Double.parseDouble(tab[1]));
                             console.log("ajoutMesure: "+i);
                         }
+                    }
+
 
                 }
 

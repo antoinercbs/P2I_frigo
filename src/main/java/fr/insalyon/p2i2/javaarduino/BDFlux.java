@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class BDFlux {
 
-    private Connection conn;
+    public static Connection conn;
     private PreparedStatement insertMesureStatement;
     private PreparedStatement insertProduitStatement;
     private PreparedStatement insertListeProduitStatement;

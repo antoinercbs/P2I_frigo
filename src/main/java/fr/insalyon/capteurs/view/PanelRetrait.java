@@ -5,10 +5,10 @@
  */
 package fr.insalyon.capteurs.view;
 
+import fr.insalyon.capteurs.Capteurs;
+
 import java.awt.Color;
-import java.awt.Font;
 import javax.swing.JButton;
-import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 /**
@@ -17,19 +17,19 @@ import javax.swing.JTextArea;
  */
 public class PanelRetrait extends StandardPanel {
 
-    private final JButton boutonRetourRetrait;
-    private final JTextArea labelRetrait;
-    private final JTextArea labelListeRetrait;
+    public final JButton boutonRetour;
+    public final JTextArea labelRetrait;
+    public final JTextArea labelListeRetrait;
     
 
-    public PanelRetrait() {
+    public PanelRetrait(Events eventsHandler) {
         super();
-        boutonRetourRetrait = new JButton("Retour");
-        boutonRetourRetrait.setBounds(800, 600, 150, 50);
-        boutonRetourRetrait.setBackground(super.COULEUR);
-        boutonRetourRetrait.setForeground(Color.WHITE);
-        boutonRetourRetrait.setFont(super.POLICE);
-        boutonRetourRetrait.addMouseListener(super.handler);
+        boutonRetour = new JButton("Retour");
+        boutonRetour.setBounds(800, 600, 150, 50);
+        boutonRetour.setBackground(super.COULEUR);
+        boutonRetour.setForeground(Color.WHITE);
+        boutonRetour.setFont(super.POLICE);
+        boutonRetour.addActionListener(eventsHandler);
 
         labelRetrait = new JTextArea("Votre réfrigérateur est en mode Retrait." + newLine + "" + newLine + "Vous pouvez scanner vos articles!");
         labelRetrait.setBounds(50, 150, 900, 200);
@@ -39,7 +39,7 @@ public class PanelRetrait extends StandardPanel {
         labelListeRetrait.setBounds(50, 350, 700, 400);
         labelListeRetrait.setFont(super.POLICE);
 
-        this.add(boutonRetourRetrait);
+        this.add(boutonRetour);
         this.add(labelRetrait);
         this.add(labelListeRetrait);
     }

@@ -16,7 +16,6 @@ import javax.swing.JPanel;
 public class StandardPanel extends JPanel {
 
     public static Color COULEUR;
-    protected Events handler;
 
     protected static Font POLICE_BOUTON;
     protected static Font POLICE;
@@ -26,7 +25,6 @@ public class StandardPanel extends JPanel {
     protected StandardPanel() {
         this.setLayout(null);
         this.setBackground(Color.WHITE);
-        this.handler = new Events();
 
         POLICE_BOUTON = new Font("Grobold", 1, 40);
         POLICE = new Font("Dosis", 1, 25);

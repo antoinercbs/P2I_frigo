@@ -5,7 +5,8 @@
  */
 package fr.insalyon.capteurs.view;
 
-import fr.insalyon.p2i2.javaarduino.BDFlux;
+import fr.insalyon.capteurs.Capteurs;
+
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -16,52 +17,73 @@ import javax.swing.JLabel;
  */
 public class PanelPrincipal extends StandardPanel {
 
-    private final JLabel LabelHaut;
-    private final JLabel LabelBas;
-    private JButton BoutonDepot;
-    private JButton BoutonRetrait;
-    private JButton BoutonMonFrigo;
-    public PanelPrincipal(BDFlux bd) {
+    public final JLabel labelHaut;
+    public final JLabel labelBas;
+    public JButton boutonDepot;
+    public JButton boutonRetrait;
+    public JButton boutonMonFrigo;
 
-        LabelHaut = new JLabel("                                      Température : " + " °C                          Humidité : "  + " %");
-        LabelHaut.setBounds(0, 0, 1000, 100);
-        LabelHaut.setFont(StandardPanel.POLICE);
-        LabelHaut.setBackground(StandardPanel.COULEUR);
-        LabelHaut.setForeground(Color.WHITE);
-        LabelHaut.setOpaque(true);
+    public PanelPrincipal(Events eventsHandler) {
 
-        LabelBas = new JLabel("                                             Numéro de Série : ");
-        LabelBas.setBounds(0, 710, 1000, 50);
-        LabelBas.setFont(StandardPanel.POLICE);
-        LabelBas.setBackground(StandardPanel.COULEUR);
-        LabelBas.setForeground(Color.WHITE);
-        LabelBas.setOpaque(true);
+        labelHaut = new JLabel("                                      Température : " + " °C                          Humidité : "  + " %");
+        labelHaut.setBounds(0, 0, 1000, 100);
+        labelHaut.setFont(StandardPanel.POLICE);
+        labelHaut.setBackground(StandardPanel.COULEUR);
+        labelHaut.setForeground(Color.WHITE);
+        labelHaut.setOpaque(true);
 
-        BoutonDepot = new JButton("Dépôt");
-        BoutonDepot.setBounds(550, 180, 300, 150);
-        BoutonDepot.setFont(StandardPanel.POLICE_BOUTON);
-        BoutonDepot.setBackground(StandardPanel.COULEUR);
-        BoutonDepot.setForeground(Color.WHITE);
-        BoutonDepot.addMouseListener(handler);
+        labelBas = new JLabel("                                             Numéro de Série : ");
+        labelBas.setBounds(0, 710, 1000, 50);
+        labelBas.setFont(StandardPanel.POLICE);
+        labelBas.setBackground(StandardPanel.COULEUR);
+        labelBas.setForeground(Color.WHITE);
+        labelBas.setOpaque(true);
 
-        BoutonRetrait = new JButton("Retrait");
-        BoutonRetrait.setBounds(550, 420, 300, 150);
-        BoutonRetrait.setFont(StandardPanel.POLICE_BOUTON);
-        BoutonRetrait.setBackground(StandardPanel.COULEUR);
-        BoutonRetrait.setForeground(Color.WHITE);
-        BoutonRetrait.addMouseListener(handler);
+        boutonDepot = new JButton("Dépôt");
+        boutonDepot.setBounds(550, 180, 300, 150);
+        boutonDepot.setFont(StandardPanel.POLICE_BOUTON);
+        boutonDepot.setBackground(StandardPanel.COULEUR);
+        boutonDepot.setForeground(Color.WHITE);
+        boutonDepot.addActionListener(eventsHandler);
 
-        BoutonMonFrigo = new JButton("Mon Frigo");
-        BoutonMonFrigo.setBounds(100, 180, 300, 390);
-        BoutonMonFrigo.setFont(StandardPanel.POLICE_BOUTON);
-        BoutonMonFrigo.setBackground(StandardPanel.COULEUR);
-        BoutonMonFrigo.setForeground(Color.WHITE);
-        BoutonMonFrigo.addMouseListener(handler);
+        boutonRetrait = new JButton("Retrait");
+        boutonRetrait.setBounds(550, 420, 300, 150);
+        boutonRetrait.setFont(StandardPanel.POLICE_BOUTON);
+        boutonRetrait.setBackground(StandardPanel.COULEUR);
+        boutonRetrait.setForeground(Color.WHITE);
+        boutonRetrait.addActionListener(eventsHandler);
 
-        this.add(LabelHaut);
-        this.add(LabelBas);
-        this.add(BoutonDepot);
-        this.add(BoutonRetrait);
-        this.add(BoutonMonFrigo);
+        boutonMonFrigo = new JButton("Mon Frigo");
+        boutonMonFrigo.setBounds(100, 180, 300, 390);
+        boutonMonFrigo.setFont(StandardPanel.POLICE_BOUTON);
+        boutonMonFrigo.setBackground(StandardPanel.COULEUR);
+        boutonMonFrigo.setForeground(Color.WHITE);
+        boutonMonFrigo.addActionListener(eventsHandler);
+
+        this.add(labelHaut);
+        this.add(labelBas);
+        this.add(boutonDepot);
+        this.add(boutonRetrait);
+        this.add(boutonMonFrigo);
+    }
+
+    public JLabel getLabelHaut() {
+        return labelHaut;
+    }
+
+    public JLabel getLabelBas() {
+        return labelBas;
+    }
+
+    public JButton getBoutonDepot() {
+        return boutonDepot;
+    }
+
+    public JButton getBoutonRetrait() {
+        return boutonRetrait;
+    }
+
+    public JButton getBoutonMonFrigo() {
+        return boutonMonFrigo;
     }
 }

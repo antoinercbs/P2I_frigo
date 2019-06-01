@@ -17,11 +17,13 @@ public class Events implements ActionListener, MouseListener {
             Main.F.remove(Main.F.panelPrincipal);
             Main.F.setContentPane(Main.F.panelDepot);
             Main.F.revalidate();
+            Main.estEnModeDepot=true;
         }
         if (e.getSource() == Main.F.panelPrincipal.boutonRetrait) {
             Main.F.remove(Main.F.panelPrincipal);
             Main.F.setContentPane(Main.F.panelRetrait);
             Main.F.revalidate();
+            Main.estEnModeRetrait=true;
         }
         if (e.getSource() == Main.F.panelPrincipal.boutonMonFrigo) {
             Main.F.remove(Main.F.panelPrincipal);
@@ -40,11 +42,13 @@ public class Events implements ActionListener, MouseListener {
             Main.F.remove(Main.F.panelDepot);
             Main.F.setContentPane((Main.F.panelPrincipal));
             Main.F.revalidate();
+            Main.estEnModeDepot=false;
         }
         if (e.getSource() == Main.F.panelRetrait.boutonRetour) {
             Main.F.remove(Main.F.panelRetrait);
             Main.F.setContentPane((Main.F.panelPrincipal));
             Main.F.revalidate();
+            Main.estEnModeRetrait=false;
         }
     }
 

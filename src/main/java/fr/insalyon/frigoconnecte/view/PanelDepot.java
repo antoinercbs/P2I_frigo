@@ -17,9 +17,10 @@ import javax.swing.*;
 public class PanelDepot  extends StandardPanel{
 
     public final JButton boutonRetour;
+    public final SubPanelRetraitDepot subPanelDepot;
     public JTextArea labelDepot;
     public final JTextArea labelListeDepot;
-    
+    public final JScrollPane scrollPane;
     
     public PanelDepot(Events eventsHandler) {
         super();
@@ -33,13 +34,18 @@ public class PanelDepot  extends StandardPanel{
         boutonRetour.setFont(StandardPanel.POLICE);
         boutonRetour.addActionListener(Main.eventsHandler);
 
-        labelDepot = new JTextArea("Votre réfrigérateur est en mode Dépôt." + StandardPanel.newLine + "" + StandardPanel.newLine + "Vous pouvez scanner vos articles!");
-        labelDepot.setBounds(50, 150, 900, 200);
+        labelDepot = new JTextArea("Votre réfrigérateur est en mode Dépôt." + StandardPanel.newLine + "Vous pouvez scanner vos articles!");
+        labelDepot.setBounds(50, 10, 900, 150);
         labelDepot.setFont(StandardPanel.POLICE_BOUTON);
 
         labelListeDepot = new JTextArea(" Vos derniers ajouts : ");
-        labelListeDepot.setBounds(50, 350, 700, 400);
+        labelListeDepot.setBounds(50, 150, 700, 400);
         labelListeDepot.setFont(StandardPanel.POLICE);
+
+        this.subPanelDepot = new SubPanelRetraitDepot(Main.eventsHandler, Main.ID_FRIGO);
+        this.scrollPane = new JScrollPane(subPanelDepot, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        this.scrollPane.setBounds(50,200, 850,480);
+        this.add(scrollPane);
 
         this.add(boutonRetour);
         this.add(labelDepot);

@@ -36,10 +36,47 @@ public class BDFlux {
             this.insertListeProduitStatement = this.conn.prepareStatement("INSERT INTO ListeProduit (codeBarre, nomProduit, lienImage, categorie, contenance, uniteContenace, dureeValide) VALUES (?, ?, ?, ?, ?, ?, ?);");
             this.insertEchangeStatement=this.conn.prepareStatement("INSERT INTO Echange(idEchange,refrigerateur1,refrigerateur2,prixVente) VALUES(?,?,?,?); ");
             this.insertListeProduitEchangeStatement=this.conn.prepareStatement("INSERT INTO ListeProduitEchange(idEchange,idProduit,idRefrigerateur,nbProduits) VALUES(?,?,?,?); ");
-            this.deleteProduitStatement=this.conn.prepareStatement("Delete from Produit where idProduit=? and idRefrigerateur=? ;");
+            this.deleteProduitStatement=this.conn.prepareStatement("DELETE from Produit where idProduit=? and idRefrigerateur=? ;");
         } catch (Exception ex) {
             ex.printStackTrace(System.err);
             System.exit(-1);
+        }
+    }
+
+    public ResultSet enleverProduit(int idFrigo, double codeBarre) {
+        PreparedStatement ps = null;
+        try {
+            int idToDel = 0;
+            ps = BDFlux.conn.prepareStatement("SELECT idProduit FROM Produit WHERE idRefrigerateur=? AND codeBarre=?");
+            ps.setInt(1, idFrigo);
+            ps.setDouble(2, codeBarre);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) idToDel = rs.getInt("idProduit");
+
+            ps =  BDFlux.conn.prepareStatement("select * from Produit where idProduit=? and idRefrigerateur=? ;");
+            ps.setInt(1, idToDel);
+            ps.setInt(2, idFrigo);
+            ResultSet rs2 = ps.executeQuery();
+            ps = this.deleteProduitStatement;
+            ps.setInt(1, idToDel);
+            ps.setInt(2, idFrigo);
+            ps.executeUpdate();
+            return rs2;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public ResultSet getLatestAddedProductIn(int idFrigo) {
+        PreparedStatement ps = null;
+        try {
+            ps = BDFlux.conn.prepareStatement("SELECT DISTINCT * FROM Produit p, ListeProduit lp WHERE p.idRefrigerateur=? AND  lp.codeBarre=p.codeBarre AND dateInsertion IN (SELECT max(dateInsertion) FROM Produit);");
+            ps.setInt(1, idFrigo);
+            ResultSet rs = ps.executeQuery();
+            return rs;
+        } catch (SQLException e) {
+            return null;
         }
     }
 

@@ -5,6 +5,8 @@
  */
 package fr.insalyon.frigoconnecte.view;
 
+import fr.insalyon.frigoconnecte.Main;
+
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -30,7 +32,7 @@ public class PanelPrincipal extends StandardPanel {
         labelHaut.setForeground(Color.WHITE);
         labelHaut.setOpaque(true);
 
-        labelBas = new JLabel("                                             Numéro de Série : ");
+        labelBas = new JLabel("                                             Numéro de Série : " + Main.ID_FRIGO);
         labelBas.setBounds(0, 710, 1000, 50);
         labelBas.setFont(StandardPanel.POLICE);
         labelBas.setBackground(StandardPanel.COULEUR);

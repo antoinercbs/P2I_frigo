@@ -13,15 +13,20 @@ import fr.insalyon.frigoconnecte.view.Fenetre;
 import fr.insalyon.frigoconnecte.onlineservices.BDFlux;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.TimerTask;
 
 public class Main {
 
+    public static int ID_FRIGO =42;
+
     public static Fenetre F;
     public static Events eventsHandler;
     public static BDFlux maBD;
-    final Console console = new Console();
+    public static final Console console = new Console();
+    public static boolean estEnModeRetrait = false;
+    public static boolean estEnModeDepot = false;
 
     public static void main(String[] args) {
         maBD = new BDFlux("G221_C_BD2", "G221_C", "G221_C");
@@ -68,9 +73,23 @@ public class Main {
                         if (tab.length > 1) {
                             a = Integer.parseInt(tab[0]);
                             if (a == 1) // permet l'insertion dans la table Produit
-                                maBD.ajouterProduit(2, Long.parseLong(tab[1]));
+                                if (estEnModeDepot) {
+                                    maBD.ajouterProduit(ID_FRIGO, Long.parseLong(tab[1]));
+                                    try {
+                                        F.panelDepot.subPanelDepot.updateSelectionFromResultSet(maBD.getLatestAddedProductIn(ID_FRIGO));
+                                    } catch (SQLException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                                else if (estEnModeRetrait) {
+                                    try {
+                                        F.panelRetrait.subPanelRetrait.updateSelectionFromResultSet(maBD.enleverProduit(ID_FRIGO, Long.parseLong(tab[1])));
+                                    } catch (SQLException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
                             if (a != 0) {
-                                int i = maBD.ajouterMesure(2, a, Double.parseDouble(tab[1]));
+                                int i = maBD.ajouterMesure(ID_FRIGO, a, Double.parseDouble(tab[1]));
                                 console.log("ajoutMesure: " + i);
                             }
                         }

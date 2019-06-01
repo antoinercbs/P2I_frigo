@@ -5,9 +5,10 @@
  */
 package fr.insalyon.frigoconnecte.view;
 
+import fr.insalyon.frigoconnecte.Main;
+
 import java.awt.Color;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
+import javax.swing.*;
 
 /**
  *
@@ -18,6 +19,8 @@ public class PanelRetrait extends StandardPanel {
     public final JButton boutonRetour;
     public final JTextArea labelRetrait;
     public final JTextArea labelListeRetrait;
+    public final SubPanelRetraitDepot subPanelRetrait;
+    public final JScrollPane scrollPane;
     
 
     public PanelRetrait(Events eventsHandler) {
@@ -29,13 +32,20 @@ public class PanelRetrait extends StandardPanel {
         boutonRetour.setFont(super.POLICE);
         boutonRetour.addActionListener(eventsHandler);
 
-        labelRetrait = new JTextArea("Votre réfrigérateur est en mode Retrait." + newLine + "" + newLine + "Vous pouvez scanner vos articles!");
-        labelRetrait.setBounds(50, 150, 900, 200);
+        labelRetrait = new JTextArea("Votre réfrigérateur est en mode Retrait." + newLine + "Vous pouvez scanner vos articles!");
+        labelRetrait.setBounds(50, 10, 900, 150);
         labelRetrait.setFont(super.POLICE_BOUTON);
 
         labelListeRetrait = new JTextArea(" Vos derniers retraits : ");
-        labelListeRetrait.setBounds(50, 350, 700, 400);
+        labelListeRetrait.setBounds(50, 150, 700, 400);
         labelListeRetrait.setFont(super.POLICE);
+
+        this.subPanelRetrait = new SubPanelRetraitDepot(Main.eventsHandler, Main.ID_FRIGO);
+        this.scrollPane = new JScrollPane(subPanelRetrait, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        this.scrollPane.setBounds(50,200, 850,480);
+        this.add(scrollPane);
+
+
 
         this.add(boutonRetour);
         this.add(labelRetrait);

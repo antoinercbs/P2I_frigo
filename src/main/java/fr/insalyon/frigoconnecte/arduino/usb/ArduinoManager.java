@@ -1,6 +1,5 @@
-package fr.insalyon.p2i2.javaarduino.usb;
+package fr.insalyon.frigoconnecte.arduino.usb;
 
-import fr.insalyon.p2i2.javaarduino.util.Console;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

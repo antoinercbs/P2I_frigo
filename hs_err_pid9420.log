@@ -18,10 +18,10 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: fr.insalyon.p2i2.javaarduino.TestArduino
+Command Line: TestArduino
 
 Host: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz, 8 cores, 7G,  Windows 10 , 64 bit Build 17763 (10.0.17763.475)
-Time: Sun May 26 22:11:22 2019 Paris, Madrid (heure d?été) elapsed time: 1 seconds (0d 0h 0m 1s)
+Time: Sun May 26 22:11:22 2019 Paris, Madrid (heure d?ï¿½tï¿½) elapsed time: 1 seconds (0d 0h 0m 1s)
 
 ---------------  T H R E A D  ---------------
 
@@ -34,9 +34,9 @@ C  [jSSC-2.8_x86_64.dll+0xb5db]
 Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
 j  jssc.SerialNativeInterface.openPort(Ljava/lang/String;Z)J+0
 j  jssc.SerialPort.openPort()Z+65
-j  fr.insalyon.p2i2.javaarduino.usb.ArduinoUsbChannel.open()V+4
-j  fr.insalyon.p2i2.javaarduino.usb.ArduinoManager.start()V+62
-j  fr.insalyon.p2i2.javaarduino.TestArduino.main([Ljava/lang/String;)V+166
+j  ArduinoUsbChannel.open()V+4
+j  ArduinoManager.start()V+62
+j  TestArduino.main([Ljava/lang/String;)V+166
 v  ~StubRoutines::call_stub
 
 siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0xffffffff84811ff9
@@ -446,7 +446,7 @@ dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
 symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-12.0.1\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.503_none_05b23ef40721f4ae;C:\Program Files\Java\jdk-12.0.1\bin\server;C:\Users\Antoine Rochebois\.jssc\windows
 
 VM Arguments:
-java_command: fr.insalyon.p2i2.javaarduino.TestArduino
+java_command: TestArduino
 java_class_path (initial): D:\User\Documents\NetBeansProjects\P2I_frigo2\target\classes;C:\Users\Antoine Rochebois\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;C:\Users\Antoine Rochebois\.m2\repository\org\scream3r\jssc\2.8.0\jssc-2.8.0.jar;C:\Users\Antoine Rochebois\.m2\repository\com\squareup\okhttp\okhttp\2.7.2\okhttp-2.7.2.jar;C:\Users\Antoine Rochebois\.m2\repository\com\squareup\okio\okio\2.2.2\okio-2.2.2.jar;C:\Users\Antoine Rochebois\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.2.60\kotlin-stdlib-1.2.60.jar;C:\Users\Antoine Rochebois\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.2.60\kotlin-stdlib-common-1.2.60.jar;C:\Users\Antoine Rochebois\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Antoine Rochebois\.m2\repository\org\json\json\20180813\json-20180813.jar
 Launcher Type: SUN_STANDARD
 

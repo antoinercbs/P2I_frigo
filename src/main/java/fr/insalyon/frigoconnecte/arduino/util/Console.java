@@ -1,4 +1,4 @@
-package fr.insalyon.p2i2.javaarduino.util;
+package fr.insalyon.frigoconnecte.arduino.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;

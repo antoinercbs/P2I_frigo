@@ -2,22 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e9d4ff5-6a61-49cd-b416-2b144718ca61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/MiniPanelProduit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelInventaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelMonFrigo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelRecettes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelStatistiques.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Produit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelAccepterEchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelDemanderEchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/Capteurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/Capteurs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Events.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Fenetre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelDepot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelDepot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelRetrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelRetrait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/StandardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/StandardPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/BDFlux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/BDFlux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/TestArduino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/TestArduino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid14992.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid14992.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid9420.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid9420.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/Capteurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/onlineservices/FoodAPIManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/FoodAPIManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/onlineservices/Traduction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Fenetre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Fenetre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/MiniPanelProduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelDepot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelDepot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelInventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelInventaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelMonFrigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelMonFrigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelRecettes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelRetrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRetrait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelStatistiques.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelStatistiques.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/StandardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/StandardPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/BDFlux.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/TestArduino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/TestArduino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/usb/ArduinoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/usb/ArduinoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/usb/ArduinoUsbChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/usb/ArduinoUsbChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/util/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/util/Console.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,91 +45,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/TestArduino.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/TestArduino.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/Capteurs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Fenetre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Events.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/BDFlux.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="221">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/MiniPanelProduit.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelInventaire.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/onlineservices/Traduction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelMonFrigo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1598">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
@@ -160,12 +100,29 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelStatistiques.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Events.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/BoutonProduit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/BDFlux.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/Capteurs.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/MiniPanelProduit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/BDFlux.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Fenetre.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelInventaire.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/onlineservices/Traduction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/EchangeSubPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelStatistiques.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRetrait.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelDepot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Fenetre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/EchangePanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelInventaire.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Produit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelDemanderEchange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelAccepterEchange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelMonFrigo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/TestArduino.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java" />
       </list>
     </option>
   </component>
@@ -180,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,7 +169,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="insalyon" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
@@ -219,8 +177,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="insalyon" type="462c0819:PsiDirectoryNode" />
-              <item name="capteurs" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
+              <item name="arduino" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
@@ -228,8 +186,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="insalyon" type="462c0819:PsiDirectoryNode" />
-              <item name="capteurs" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
               <item name="onlineservices" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,40 +195,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="insalyon" type="462c0819:PsiDirectoryNode" />
-              <item name="capteurs" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P2I_frigo2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="insalyon" type="462c0819:PsiDirectoryNode" />
-              <item name="javaarduino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P2I_frigo2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20804597" />
@@ -289,13 +225,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Capteurs">
-    <configuration name="Capteurs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.insalyon.capteurs.Capteurs" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.insalyon.frigoconnecte.Main" />
       <module name="Capteurs_P2I" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.insalyon.capteurs.*" />
+          <option name="PATTERN" value="fr.insalyon.frigoconnecte.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -316,9 +252,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.TestArduino" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Capteurs" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestArduino" />
       </list>
     </recent_temporary>
@@ -334,30 +274,39 @@
       <option name="presentableId" value="Default" />
       <updated>1558902194295</updated>
     </task>
+    <task id="LOCAL-00001" summary="dernier commit">
+      <created>1559031982310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559031982310</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23081024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49253732" visible="true" weight="0.34669557" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49840087" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5074627" side_tool="true" visible="true" weight="0.34669557" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49200428" weight="0.32936078" />
+      <window_info anchor="bottom" id="Floobits" order="0" sideWeight="0.4978678" weight="0.30444205" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48827294" visible="true" weight="0.34669557" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49840087" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5117271" side_tool="true" visible="true" weight="0.34669557" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4904051" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -367,6 +316,10 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dernier commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="dernier commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
@@ -387,26 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="2812" selection-start-line="2812" selection-end-line="2812" />
-          <folding>
-            <element signature="e#7836#7837#0" expanded="true" />
-            <element signature="e#7916#7917#0" expanded="true" />
-            <element signature="e#8196#8197#0" expanded="true" />
-            <element signature="e#8276#8277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/PreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1008" lean-forward="true" selection-start-line="1008" selection-end-line="1023" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/ResultSetImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -414,137 +347,217 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/usb/ArduinoManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/usb/ArduinoManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1105">
           <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/onlineservices/FoodAPIManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/FoodAPIManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelDepot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelRecettes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelStatistiques.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelRetrait.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelPrincipal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/StandardPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/StandardPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/TestArduino.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="71" />
+        <state relative-caret-position="153">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/Capteurs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/EchangeSubPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Fenetre.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/p2i2/javaarduino/BDFlux.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelMonFrigo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state>
+          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/PanelInventaire.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1044" selection-start-line="1044" selection-end-line="1044" />
+          <folding>
+            <element signature="e#34863#34864#0" expanded="true" />
+            <element signature="e#35177#35178#0" expanded="true" />
+            <element signature="e#35206#35207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+          <folding>
+            <element signature="e#5784#5785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
+          <folding>
+            <element signature="e#7836#7837#0" expanded="true" />
+            <element signature="e#7916#7917#0" expanded="true" />
+            <element signature="e#8276#8277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelStatistiques.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/PreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="990" selection-start-line="990" selection-end-line="990" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelDepot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Produit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelDemanderEchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelAccepterEchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelMonFrigo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <caret line="48" column="92" selection-start-line="48" selection-start-column="92" selection-end-line="48" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelInventaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/onlineservices/Traduction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Fenetre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/capteurs/view/MiniPanelProduit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+        <state relative-caret-position="459">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRetrait.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/arduino/TestArduino.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>

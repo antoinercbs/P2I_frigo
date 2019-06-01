@@ -1,4 +1,4 @@
-package fr.insalyon.p2i2.javaarduino.usb;
+package fr.insalyon.frigoconnecte.arduino.usb;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -12,6 +12,7 @@ public class Produit {
     public double pourcentageRestant;
     public String datePeremption;
     public int estDemandePar;
+    public int proprietaire;
 
     public boolean isShared = false;
 
@@ -25,6 +26,7 @@ public class Produit {
         this.datePeremption = datePeremption;
         this.isShared = Main.maBD.getShareStatueFrom(idProduit);
         this.estDemandePar = Main.maBD.getProductAsker(idProduit);
+        this.proprietaire = Main.maBD.getProductOwner(idProduit);
     }
 
     public boolean changeSharedStatue() {

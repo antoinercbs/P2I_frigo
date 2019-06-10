@@ -2,9 +2,13 @@ package fr.insalyon.frigoconnecte.view;
 
 import fr.insalyon.frigoconnecte.Main;
 
+import javax.swing.*;
 import java.awt.event.*;
 
 public class Events implements ActionListener, MouseListener {
+
+    private static NewExchange exchange;
+
 
     public Events() {
     }
@@ -63,6 +67,14 @@ public class Events implements ActionListener, MouseListener {
                 mpp.changeExchangeColor();
                 mpp.p.changeSharedStatue();
                 mpp.p.changeExchangeStatue(mpp.idFrigo);
+            } else if (mpp.getParent().getClass().equals(Main.F.panelMonFrigo.panelAccepterEchange.getClass())) {
+                Main.buffProduct = mpp.p.idProduit;
+                this.exchange = new NewExchange(mpp.idFrigo, mpp.p.idProduit);
+
+            } else {
+                Main.maBD.createNewExchange(mpp.p.idProduit, Main.buffProduct);
+                JDialog jd = (JDialog) mpp.getParent();
+                jd.dispose();
             }
 
         }

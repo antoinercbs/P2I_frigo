@@ -7,7 +7,7 @@ package fr.insalyon.frigoconnecte.view;
 
 import fr.insalyon.frigoconnecte.Main;
 
-import java.awt.Color;
+import java.awt.*;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
@@ -85,5 +85,15 @@ public class PanelPrincipal extends StandardPanel {
 
     public JButton getBoutonMonFrigo() {
         return boutonMonFrigo;
+    }
+
+    public void paintComponent(Graphics g) {
+        g.setFont(new Font("Arial", Font.BOLD, 15));
+        drawString(g, Main.maBD.getPendingExchanges(Main.ID_FRIGO), 100,600);
+    }
+
+    void drawString(Graphics g, String text, int x, int y) {
+        for (String line : text.split("\n"))
+            g.drawString(line, x, y += g.getFontMetrics().getHeight());
     }
 }

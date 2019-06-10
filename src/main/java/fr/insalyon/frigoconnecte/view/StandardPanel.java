@@ -20,7 +20,7 @@ public class StandardPanel extends JPanel {
     protected static Font POLICE_BOUTON;
     protected static Font POLICE;
 
-    protected static String newLine = System.getProperty("line.separator");
+    public static String newLine = System.getProperty("line.separator");
 
     protected StandardPanel() {
         this.setLayout(null);

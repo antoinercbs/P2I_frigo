@@ -11,15 +11,21 @@ import fr.insalyon.frigoconnecte.view.Events;
 import fr.insalyon.frigoconnecte.view.Fenetre;
 
 import fr.insalyon.frigoconnecte.onlineservices.BDFlux;
+import fr.insalyon.frigoconnecte.view.NewFrigo;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Timer;
 import java.util.TimerTask;
 
-public class Main {
+public class Main  {
 
-    public static int ID_FRIGO =42;
+    public static int ID_FRIGO =66;
+    public static String nomFrigo = "";
+    public static String adresseFrigo = "";
+
+    public static NewFrigo nf;
 
     public static Fenetre F;
     public static Events eventsHandler;
@@ -28,10 +34,16 @@ public class Main {
     public static boolean estEnModeRetrait = false;
     public static boolean estEnModeDepot = false;
 
+    public static int buffProduct;
+
+
     public static void main(String[] args) {
+
         maBD = new BDFlux("G221_C_BD2", "G221_C", "G221_C");
         eventsHandler = new Events();
+        if (!maBD.isRefrgierateurExistant(ID_FRIGO)) nf= new NewFrigo();
         F = new Fenetre(eventsHandler);
+
 
 
         // Affichage sur la console
@@ -69,7 +81,8 @@ public class Main {
                         dataFinal.add(data[j].split(";"));
                     }
 
-                    for (String[] tab : dataFinal) {
+                    for (int k = 0; k < dataFinal.size(); k++) {
+                        String[] tab = dataFinal.get(k);
                         if (tab.length > 1) {
                             a = Integer.parseInt(tab[0]);
                             if (a == 1) // permet l'insertion dans la table Produit
@@ -80,8 +93,7 @@ public class Main {
                                     } catch (SQLException e) {
                                         e.printStackTrace();
                                     }
-                                }
-                                else if (estEnModeRetrait) {
+                                } else if (estEnModeRetrait) {
                                     try {
                                         F.panelRetrait.subPanelRetrait.updateSelectionFromResultSet(maBD.enleverProduit(ID_FRIGO, Long.parseLong(tab[1])));
                                     } catch (SQLException e) {
@@ -89,22 +101,21 @@ public class Main {
                                     }
                                 }
                             if (a != 0) {
-                                int i = maBD.ajouterMesure(ID_FRIGO, a, Double.parseDouble(tab[1]));
+                                System.out.println(a);
+                                int i = maBD.ajouterMesure(ID_FRIGO, a, k, Double.parseDouble(tab[1]));
                                 console.log("ajoutMesure: " + i);
                             }
                         }
-
-
                     }
 
-                    String s = "-- ";
+                    /*String s = "-- ";
 
                     for (String[] tab : dataFinal) {
                         s = s + "\n\t" + tab.length + " -- \n";
                         for (int j = 0; j < tab.length; j++)        // Permet d'afficher sur la console les données transmis sous forme "idCapteur;val"
                             s = s + (" - " + tab[j]);
                     }
-                    console.println(s);
+                    console.println(s);*/
                 }
             }
 
@@ -150,12 +161,7 @@ public class Main {
         }
 
 
-        TimerTask bdUpdate = new TimerTask() {
-            @Override
-            public void run() {
 
-            }
-        };
     }
 
 

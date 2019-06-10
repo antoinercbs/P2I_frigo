@@ -23,14 +23,14 @@ public class PanelMonFrigo extends JTabbedPane {
 
 
         panelRecettes = new PanelRecettes(Main.eventsHandler);
-        this.addTab("Recettes", panelRecettes);
+        this.addTab("Recettes", new JScrollPane(panelRecettes, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER));
         panelInventaire = new PanelInventaire(eventsHandler, Main.ID_FRIGO);
         this.addTab("Inventaire", new JScrollPane(panelInventaire, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER));
         panelDemanderEchange = new PanelDemanderEchange(eventsHandler, Main.ID_FRIGO);
         this.addTab("Echanges disponibles", new JScrollPane(panelDemanderEchange, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER));
         panelAccepterEchange = new PanelAccepterEchange(eventsHandler, Main.ID_FRIGO);
         this.addTab("Echanges demandés", new JScrollPane(panelAccepterEchange, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER));
-        panelStatistiques = new PanelStatistiques(eventsHandler);
+        panelStatistiques = new PanelStatistiques(eventsHandler, Main.ID_FRIGO);
         this.addTab("Statistiques", panelStatistiques);
 
 

@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e9d4ff5-6a61-49cd-b416-2b144718ca61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_knowm_xchart_xchart_3_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Recette.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewFrigo.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewFrigo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capteurs_P2I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Capteurs_P2I.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Recette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Recette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelAccepterEchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelAccepterEchange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelMonFrigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelMonFrigo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelStatistiques.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelStatistiques.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/StandardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/StandardPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -50,62 +35,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="94" column="101" selection-start-line="94" selection-start-column="101" selection-end-line="94" selection-end-column="101" />
+            <state relative-caret-position="379">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
               <folding>
-                <element signature="e#3298#3307#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1029#1037#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelMonFrigo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Recette.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-              <folding>
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#3425#3434#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,6 +54,62 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="90" column="78" selection-start-line="90" selection-start-column="78" selection-end-line="90" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/traduction.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -190,22 +179,25 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/StandardPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelPrincipal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.form" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelStatistiques.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelMonFrigo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.form" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Recette.java" />
+        <option value="$PROJECT_DIR$/src/resources/traduction.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="973" />
+    <option name="width" value="954" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -252,6 +244,44 @@
               <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
               <item name="P2I_frigo2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
+              <item name="onlineservices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P2I_frigo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P2I_frigo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="DialogRecette" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P2I_frigo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frigoconnecte" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="NewExchange" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Capteurs_P2I" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P2I_frigo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -266,13 +296,16 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20804597" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\User\Documents\NetBeansProjects\P2I_frigo2\src\main\java\fr\insalyon\frigoconnecte\view" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\User\Documents\NetBeansProjects\P2I_frigo2\src\resources" />
       <recent name="D:\User\Documents\NetBeansProjects\P2I_frigo2\src\main\java\fr\insalyon\frigoconnecte\onlineservices" />
@@ -405,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559418051414</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dernier commit">
+      <created>1560198622438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560198622438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -421,8 +461,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5379113" visible="true" weight="0.23667377" />
-      <window_info id="Structure" order="1" sideWeight="0.4620887" side_tool="true" visible="true" weight="0.23667377" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5350501" visible="true" weight="0.23667377" />
+      <window_info id="Structure" order="1" sideWeight="0.46494994" side_tool="true" visible="true" weight="0.23667377" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -449,39 +489,22 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.53913045" visible="true" weight="0.3884026" />
-      <window_info id="Structure" order="1" sideWeight="0.46086955" side_tool="true" visible="true" weight="0.3884026" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Floobits" order="0" sideWeight="0.4978678" weight="0.30444205" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49840087" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.9264392" visible="true" weight="0.24507658" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4946695" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.07356077" side_tool="true" weight="0.30010834" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48880598" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dernier commit" />
     <option name="LAST_COMMIT_MESSAGE" value="dernier commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
@@ -547,13 +570,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/FoodAPIManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -626,19 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-592">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-          <folding>
-            <element signature="e#873#1001#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1465#1466#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/StandardPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -673,61 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelInventaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelStatistiques.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1029#1037#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -755,43 +707,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/FoodAPIManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="470">
+          <caret line="66" column="57" lean-forward="true" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="94" column="101" selection-start-line="94" selection-start-column="101" selection-end-line="94" selection-end-column="101" />
+        <state relative-caret-position="224">
+          <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelInventaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-658">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="e#3298#3307#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/PanelRecettes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/NewExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1168">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelProduit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/Traduction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/model/Recette.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+        <state relative-caret-position="187">
+          <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
           <folding>
             <element signature="e#704#705#0" expanded="true" />
             <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/MiniPanelRecette.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/Events.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="557">
+          <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/traduction.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/onlineservices/BDFlux.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3425#3434#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insalyon/frigoconnecte/view/DialogRecette.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="90" column="78" selection-start-line="90" selection-start-column="78" selection-end-line="90" selection-end-column="78" />
         </state>
       </provider>
     </entry>

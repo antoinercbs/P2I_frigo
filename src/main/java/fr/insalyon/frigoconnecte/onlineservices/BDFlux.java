@@ -60,16 +60,17 @@ public class BDFlux {
             for (int i = 0; i < liste.length; i++){
                 recettes.addAll(getRecettesWith(liste[i]));
             }
-            while (recettes.size() > 50) recettes.remove(recettes.size()-1);
+
             setRecetteIterationsInList(recettes);
-            Collections.sort(recettes, (r1, r2) -> {
-                return r2.iterations - r1.iterations; // desscending
-            });
 
-            Set<Recette> mySet = new HashSet<Recette>(recettes); //Enlèvement des doublons
+            Set<Recette> recettesHash = new HashSet<Recette>(recettes); //Enlèvement des doublons
             recettes.clear();
-            recettes.addAll(mySet);
+            recettes.addAll(recettesHash);
 
+            Collections.sort(recettes, (r1, r2) -> r2.getRatio() - r1.getRatio());
+
+
+            while (recettes.size() > 50) recettes.remove(recettes.size()-1);
 
             return  recettes;
         } catch (SQLException e) {
@@ -90,6 +91,7 @@ public class BDFlux {
     private ArrayList<Recette> getRecettesWith(String ingredient) {
         PreparedStatement ps = null;
         ArrayList<Recette> recettes = new ArrayList<>();
+        if (ingredient.equals(""))return recettes;
         try {
             ingredient = "%" + ingredient + "%";
             ps = BDFlux.conn.prepareStatement("SELECT nomRecette, lienImage, idRecette, nbIngredients FROM Recette WHERE nomIngredients LIKE ?;");
@@ -101,6 +103,81 @@ public class BDFlux {
             return recettes;
         } catch (SQLException e) {
             return recettes;
+        }
+    }
+
+    public ResultSet getEchangeProductsInRecette(int idFrigo, int idRecette) {
+        PreparedStatement ps = null;
+        ArrayList<Integer> buffProducts = new ArrayList<>();
+        try {
+            ps = BDFlux.conn.prepareStatement("SELECT * FROM Produit p, ListeProduit lp WHERE p.codeBarre = lp.codeBarre AND p.idRefrigerateur<>? and p.EstEchangeable=1;");
+            ps.setInt(1, idFrigo);
+            ResultSet rs = ps.executeQuery();
+            String s = "";
+            while (rs.next()) {
+                String[] liste =rs.getString("categorie").split(";");
+                int n = 0;
+                for (int i = 0; i < liste.length; i++) {
+                    if (!liste[i].equals("")) {
+                        String ingredient = "%" + liste[i] + "%";
+                        ps = BDFlux.conn.prepareStatement("SELECT * FROM Recette WHERE idRecette=? AND nomIngredients LIKE ?;");
+                        ps.setInt(1, idRecette);
+                        ps.setString(2, ingredient);
+                        ResultSet rs2 = ps.executeQuery();
+                        if (rs2.next()) n++; //Si il y a une réponse, on ajoute 1
+                    }
+                }
+                if (n == liste.length) buffProducts.add(rs.getInt("idProduit"));
+            }
+            String endStatement = "";
+            for (Integer id : buffProducts) {
+                if (buffProducts.indexOf(id) == buffProducts.size() -1) endStatement+= ("idProduit="+id);
+                else endStatement+= ("idProduit="+id+" OR ");
+            }
+            if (buffProducts.size() == 0) return null;
+            ps = BDFlux.conn.prepareStatement("SELECT * FROM Produit WHERE " + endStatement);
+            rs = ps.executeQuery();
+            return rs;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public ResultSet getProductsInRecette(int idFrigo, int idRecette) {
+        PreparedStatement ps = null;
+        ArrayList<Integer> buffProducts = new ArrayList<>();
+        try {
+            ps = BDFlux.conn.prepareStatement("SELECT * FROM Produit p, ListeProduit lp WHERE p.codeBarre = lp.codeBarre AND p.idRefrigerateur=?;");
+            ps.setInt(1, idFrigo);
+            ResultSet rs = ps.executeQuery();
+            String s = "";
+            while (rs.next()) {
+                String[] liste =rs.getString("categorie").split(";");
+                int n = 0;
+                for (int i = 0; i < liste.length; i++) {
+                    if (!liste[i].equals("")) {
+                        String ingredient = "%" + liste[i] + "%";
+                        ps = BDFlux.conn.prepareStatement("SELECT * FROM Recette WHERE idRecette=? AND nomIngredients LIKE ?;");
+                        ps.setInt(1, idRecette);
+                        ps.setString(2, ingredient);
+                        ResultSet rs2 = ps.executeQuery();
+                        if (rs2.next()) n++; //Si il y a une réponse, on ajoute 1
+                    }
+                }
+                if (n == liste.length) buffProducts.add(rs.getInt("idProduit"));
+            }
+            String endStatement = "";
+            for (Integer id : buffProducts) {
+                if (buffProducts.indexOf(id) == buffProducts.size() -1) endStatement+= ("idProduit="+id);
+                else endStatement+= ("idProduit="+id+" OR ");
+            }
+            if (buffProducts.size() == 0) return null;
+            ps = BDFlux.conn.prepareStatement("SELECT * FROM Produit WHERE " + endStatement);
+            rs = ps.executeQuery();
+            return rs;
+        } catch (SQLException e) {
+            return null;
         }
     }
 

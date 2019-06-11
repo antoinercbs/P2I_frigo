@@ -49,6 +49,9 @@ public class MiniPanelRecette extends JPanel {
         g2.setColor(Color.BLACK);
         drawCenteredString(g2, this.r.nom, new Rectangle(0, 200, 200, 30), new Font("Arial", Font.BOLD, 20));
 
+        g2.setColor(Color.BLACK);
+        drawCenteredString(g2, this.r.getRatio() + "% des ingrédients", new Rectangle(0, 250, 200, 30), new Font("Arial", Font.BOLD, 15));
+
 
 
     }

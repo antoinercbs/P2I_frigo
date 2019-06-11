@@ -30,6 +30,6 @@ public class Recette {
     }
 
     public int getRatio() {
-        return (int) ((double) iterations/(double)nbIngredients);
+        return (int) ((double) iterations/(double)nbIngredients *100.0);
     }
 }

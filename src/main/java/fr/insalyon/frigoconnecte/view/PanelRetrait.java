@@ -33,7 +33,7 @@ public class PanelRetrait extends StandardPanel {
         boutonRetour.addActionListener(eventsHandler);
 
         labelRetrait = new JTextArea("Votre réfrigérateur est en mode Retrait." + newLine + "Vous pouvez scanner vos articles!");
-        labelRetrait.setBounds(50, 10, 900, 150);
+        labelRetrait.setBounds(50, 5, 900, 150);
         labelRetrait.setFont(super.POLICE_BOUTON);
 
         labelListeRetrait = new JTextArea(" Vos derniers retraits : ");

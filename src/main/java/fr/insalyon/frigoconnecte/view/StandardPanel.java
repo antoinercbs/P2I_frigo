@@ -26,8 +26,8 @@ public class StandardPanel extends JPanel {
         this.setLayout(null);
         this.setBackground(Color.WHITE);
 
-        POLICE_BOUTON = new Font("Grobold", 1, 40);
-        POLICE = new Font("Dosis", 1, 25);
+        POLICE_BOUTON = new Font("Cambria", 1, 40);
+        POLICE = new Font("Cambria", 1, 25);
         COULEUR = new Color(248, 7, 80);
     }
 }

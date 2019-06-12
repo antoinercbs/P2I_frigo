@@ -25,14 +25,14 @@ public class PanelPrincipal extends StandardPanel {
 
     public PanelPrincipal(Events eventsHandler) {
 
-        labelHaut = new JLabel("                                      Température : " + " °C                          Humidité : "  + " %");
+        labelHaut = new JLabel("               Frigogo");
         labelHaut.setBounds(0, 0, 1000, 100);
         labelHaut.setFont(StandardPanel.POLICE);
         labelHaut.setBackground(StandardPanel.COULEUR);
         labelHaut.setForeground(Color.WHITE);
         labelHaut.setOpaque(true);
 
-        labelBas = new JLabel("                                             Numéro de Série : " + Main.ID_FRIGO);
+        labelBas = new JLabel("                                                           Numéro de Série : " + Main.ID_FRIGO);
         labelBas.setBounds(0, 710, 1000, 50);
         labelBas.setFont(StandardPanel.POLICE);
         labelBas.setBackground(StandardPanel.COULEUR);
@@ -88,7 +88,7 @@ public class PanelPrincipal extends StandardPanel {
     }
 
     public void paintComponent(Graphics g) {
-        g.setFont(new Font("Arial", Font.BOLD, 15));
+        g.setFont(new Font("Cambria", Font.BOLD, 15));
         drawString(g, Main.maBD.getPendingExchanges(Main.ID_FRIGO), 100,600);
     }
 

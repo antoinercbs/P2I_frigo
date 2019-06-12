@@ -58,9 +58,9 @@ public class MiniPanelProduit extends JPanel {
         g2.drawImage(this.img, 20, 20, null);
 
         g2.setColor(Color.BLACK);
-        drawCenteredString(g2, this.p.nom, new Rectangle(0, 200, 200, 30), new Font("Arial", Font.BOLD, 20));
+        drawCenteredString(g2, this.p.nom, new Rectangle(0, 200, 200, 30), new Font("Cambria", Font.BOLD, 20));
 
-        drawCenteredString(g2, this.p.datePeremption, new Rectangle(0, 270, 200, 20), new Font("Arial", Font.PLAIN, 15));
+        drawCenteredString(g2, this.p.datePeremption, new Rectangle(0, 270, 200, 20), new Font("Cambria", Font.PLAIN, 15));
 
         //dessin de la zone de remplissage
         g2.drawString(this.p.contenance + " g", 10, 255);

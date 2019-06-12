@@ -46,6 +46,27 @@ public class BDFlux {
         }
     }
 
+        public String getIngredientsFor(int idRecette) {
+            PreparedStatement ps = null;
+            try {
+                ps = BDFlux.conn.prepareStatement("SELECT nomIngredients FROM Recette WHERE idRecette=?;");
+                ps.setInt(1, idRecette);
+                ResultSet rs = ps.executeQuery();
+                if (rs.next()) {
+                    String s = "";
+                    String liste[] = rs.getString("nomIngredients").split(";");
+                    for (int i = 0; i < liste.length; i++) {
+                        s+="-" + liste[i]+"\n";
+                    }
+                    return s;
+                }
+                return null;
+            } catch (SQLException e) {
+                return null;
+            }
+        }
+
+
     public ArrayList<Recette> getRecettesFor(int idFrigo) {
         PreparedStatement ps = null;
         ArrayList<Recette> recettes = new ArrayList<>();
@@ -56,6 +77,8 @@ public class BDFlux {
             String s = "";
             while (rs.next()) s+=rs.getString("categorie");
             String[] liste = s.split(";");
+            Set<String> ingredients = new HashSet<>(Arrays.asList(liste));
+            liste = ingredients.toArray(new String[ingredients.size()]);
             System.out.println(s);
             for (int i = 0; i < liste.length; i++){
                 recettes.addAll(getRecettesWith(liste[i]));
@@ -70,7 +93,7 @@ public class BDFlux {
             Collections.sort(recettes, (r1, r2) -> r2.getRatio() - r1.getRatio());
 
 
-            while (recettes.size() > 50) recettes.remove(recettes.size()-1);
+            while (recettes.size() > 25) recettes.remove(recettes.size()-1);
 
             return  recettes;
         } catch (SQLException e) {
@@ -573,7 +596,6 @@ public class BDFlux {
             this.insertMesureStatement.setInt(5, idTypeCapteur);
             return this.insertMesureStatement.executeUpdate();
         } catch (SQLException ex) {
-            ex.printStackTrace(System.err);
             return -1;
         }
     }

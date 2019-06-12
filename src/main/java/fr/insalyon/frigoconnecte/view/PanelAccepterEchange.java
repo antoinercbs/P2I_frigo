@@ -30,7 +30,6 @@ public class PanelAccepterEchange extends StandardPanel {
 
 
         try {
-            int nbEchangistes = Main.maBD.getAskerCountFor(idFrigo);
             drawExchangeInventaryFromResultSet(Main.maBD.getExchangeProductsAskedFrom(idFrigo));
 
         } catch (SQLException e) {
@@ -101,7 +100,7 @@ public class PanelAccepterEchange extends StandardPanel {
 
     public void paintComponent(Graphics g) {
         for (int i = 0; i < this.askersNames.size(); i++) {
-            g.setFont(new Font("Arial", Font.BOLD, 25));
+            g.setFont(new Font("Cambria", Font.BOLD, 25));
             g.drawString(this.askersNames.get(i), this.askersX.get(i)+20, this.askersY.get(i)+135);
         }
     }

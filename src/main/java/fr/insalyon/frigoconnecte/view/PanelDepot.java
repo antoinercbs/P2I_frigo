@@ -35,7 +35,7 @@ public class PanelDepot  extends StandardPanel{
         boutonRetour.addActionListener(Main.eventsHandler);
 
         labelDepot = new JTextArea("Votre réfrigérateur est en mode Dépôt." + StandardPanel.newLine + "Vous pouvez scanner vos articles!");
-        labelDepot.setBounds(50, 10, 900, 150);
+        labelDepot.setBounds(50, 5, 900, 150);
         labelDepot.setFont(StandardPanel.POLICE_BOUTON);
 
         labelListeDepot = new JTextArea(" Vos derniers ajouts : ");

@@ -16,18 +16,27 @@ import java.util.LinkedList;
 
 public class DialogRecette extends JDialog {
     private JPanel contentPane;
-    private JPanel ingredientsPanel;
-    private JPanel exchangePanel;
+    private JScrollPane ingredientsPanel;
+    private JScrollPane exchangePanel;
+    private JTextPane textPane1;
+    private JLabel textPanelfqfsqf;
 
-    ArrayList<MiniPanelProduit> miniPanelProduits = new ArrayList<>();
+    private JPanel buffIngredients;
+    private JPanel buffExchanges;
+
+
 
 
     public DialogRecette(Recette recette) {
-        this.ingredientsPanel.setLayout(null);
-        this.exchangePanel.setLayout(null);
+        this.ingredientsPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        this.ingredientsPanel.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        this.exchangePanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        this.exchangePanel.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        this.textPane1.setEditable(false);
+
+        this.setSize(1000, 1000);
         setContentPane(contentPane);
         setModal(true);
-
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -37,15 +46,30 @@ public class DialogRecette extends JDialog {
             }
         });
 
+        this.buffIngredients = new JPanel();
+        this.buffExchanges = new JPanel();
+        this.buffIngredients.setLayout(null);
+        this.buffExchanges.setLayout(null);
+
+
         try {
 
-            drawProduitsFromResultSet(Main.maBD.getProductsInRecette(Main.ID_FRIGO, recette.idRecette), ingredientsPanel);
-            drawProduitsFromResultSet(Main.maBD.getEchangeProductsInRecette(Main.ID_FRIGO, recette.idRecette), exchangePanel);
+            drawProduitsFromResultSet(Main.maBD.getProductsInRecette(Main.ID_FRIGO, recette.idRecette), buffIngredients);
+            drawProduitsFromResultSet(Main.maBD.getEchangeProductsInRecette(Main.ID_FRIGO, recette.idRecette), buffExchanges);
+            this.textPane1.setText(Main.maBD.getIngredientsFor(recette.idRecette));
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        this.pack();
+        this.buffIngredients.setVisible(true);
+        this.buffExchanges.setVisible(true);
+        this.exchangePanel.setViewportView(buffExchanges);
+        this.ingredientsPanel.setViewportView(buffIngredients);
+
+
+        this.exchangePanel.setVisible(true);
+        this.ingredientsPanel.setVisible(true);
+
         this.setVisible(true);
     }
 
@@ -84,11 +108,9 @@ public class DialogRecette extends JDialog {
             MiniPanelProduit mpp = new MiniPanelProduit(produits.get(i), false, Main.ID_FRIGO);
             mpp.setLocation(10+(210*i)%(210*4), 10+(310*(i/4)));
             mpp.color = Color.lightGray;
-            this.miniPanelProduits.add(mpp);
             jp.add(mpp);
         }
-        this.ingredientsPanel.setPreferredSize(new Dimension(1000,320+(310*(i/4))));
-        this.exchangePanel.setPreferredSize(new Dimension(1000,320+(310*(i/4))));
+        jp.setPreferredSize(new Dimension(900,320+(310*(i/4))));
 
     }
 
@@ -97,5 +119,9 @@ public class DialogRecette extends JDialog {
     private void onCancel() {
         // add your code here if necessary
         dispose();
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
     }
 }
